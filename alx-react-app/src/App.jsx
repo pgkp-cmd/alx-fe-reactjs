@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import WelcomeMessage from './components/WelcomeMessage';
 import UserProfile from './components/UserProfile';
-import MainContent from './components/MainContent'; 
+import MainContent from './components/MainContent'; // Ensure this is imported
 
 function App() {
     const userData = {
