@@ -7,8 +7,7 @@ const RegistrationForm = () => {
     password: "",
   });
 
-  const { username, email, password } = formData; 
-
+  const { username, email, password } = formData;
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
@@ -18,8 +17,8 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     let validationErrors = {};
+
     if (!username) validationErrors.username = "Username is required";
     if (!email) validationErrors.email = "Email is required";
     if (!password) validationErrors.password = "Password is required";
@@ -39,7 +38,7 @@ const RegistrationForm = () => {
         <input
           type="text"
           name="username"
-          value={username}  
+          value={username}
           onChange={handleChange}
         />
         {errors.username && <p style={{ color: "red" }}>{errors.username}</p>}
@@ -50,7 +49,7 @@ const RegistrationForm = () => {
         <input
           type="email"
           name="email"
-          value={email}  
+          value={email}
           onChange={handleChange}
         />
         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
@@ -61,7 +60,7 @@ const RegistrationForm = () => {
         <input
           type="password"
           name="password"
-          value={password}  
+          value={password}
           onChange={handleChange}
         />
         {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}

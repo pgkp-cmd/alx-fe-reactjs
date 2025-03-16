@@ -9,10 +9,7 @@ const fetchPosts = async () => {
 };
 
 const PostsComponent = () => {
-  // useQuery hook with additional options:
-  // - cacheTime: how long unused cache data remains (5 minutes in this example)
-  // - refetchOnWindowFocus: prevents automatic refetching when window regains focus
-  // - keepPreviousData: retains previous data during background refetching
+  // useQuery hook with additional options
   const { data, isLoading, isError, error, refetch } = useQuery('posts', fetchPosts, {
     staleTime: 10000, // Data is considered fresh for 10 seconds
     cacheTime: 300000, // Cache data stays in memory for 5 minutes
@@ -21,6 +18,7 @@ const PostsComponent = () => {
   });
 
   if (isLoading) return <div>Loading posts...</div>;
+  
   if (isError) return <div>Error fetching posts: {error.message}</div>;
 
   return (
