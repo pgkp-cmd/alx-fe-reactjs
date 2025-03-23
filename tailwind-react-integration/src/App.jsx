@@ -1,14 +1,12 @@
 
-import './App.css'
+import UserProfile from './components/UserProfile';
 
 function App() {
-  
-
   return (
-    <>
-      Movie App
-    </>
-  )
+    <div className="min-h-screen bg-gray-50">
+      <UserProfile />
+    </div>
+  );
 }
 
-export default App
+export default App;
