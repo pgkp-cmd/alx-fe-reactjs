@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "title": "Spaghetti Carbonara",
+      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+      "image": "https://www.thereciperebel.com/wp-content/uploads/2023/12/spaghetti-carbonara-TRR-10-of-28.jpg/150",
+      "ingredients": ["Pasta", "Eggs", "Cheese", "Bacon"],
+      "steps": ["Boil pasta", "Mix eggs and cheese", "Combine with bacon"]
+    },
+    {
+      "id": 2,
+      "title": "Chicken Tikka Masala",
+      "summary": "Chunks of grilled chicken cooked in a creamy tomato gravy.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiymto5HnD9qgwn-FQgtOG0YXxZT9zwv9kg&s/150",
+      "ingredients": ["Chicken", "Yogurt", "Spices", "Tomato Sauce"],
+      "steps": ["Marinate chicken", "Grill chicken", "Prepare sauce"]
+    }
+  ]
